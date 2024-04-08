@@ -137,7 +137,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bullet: {fileID: 1735340417747231575, guid: 84b9ddb59c618ee4c9c756f840037537, type: 3}
   bulletPoint: {fileID: 3744886326259026445}
-  bulletspeed: 1000
+  bulletspeed: 1500
 --- !u!4 &6377684621632340551 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 6940fd40d4e0300479ab2c3c4e65c5c2, type: 3}
