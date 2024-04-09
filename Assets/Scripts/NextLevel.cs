@@ -26,14 +26,15 @@ public class NextLevel : MonoBehaviour
     {
         AsyncOperation loadlevel =  SceneManager.LoadSceneAsync("ThoraFirstPerson");
 
+        loading.enabled = true; // Enable loading image before starting the scene load
+
+        // Wait until the asynchronous operation is done
         while (!loadlevel.isDone)
         {
-            loading.enabled = true;
-            
+            yield return null; // Wait for the next frame
         }
 
-        loading.enabled = false;
-        yield return null;
+        loading.enabled = false; // Disable loading image after scene load is complete
     }
 
     private void OnTriggerEnter(Collider other)
