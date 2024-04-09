@@ -7,19 +7,17 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: TumbleweedAlpha
-  m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
+  m_Name: Tumbleweed
+  m_Shader: {fileID: 4800000, guid: 9e0b78a84584ffb4b9d963b4c6f26436, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
-  m_ValidKeywords:
-  - _ALPHATEST_ON
+  m_ValidKeywords: []
   m_InvalidKeywords: []
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
-  m_CustomRenderQueue: 2450
-  stringTagMap:
-    RenderType: TransparentCutout
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
   disabledShaderPasses: []
   m_LockedProperties: 
   m_SavedProperties:
@@ -50,7 +48,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: e5382fd1c16b6d74fa6617486dadce37, type: 3}
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
@@ -71,25 +69,31 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
+    - HardEdgeAlpha: 0
+    - HardEdgeFalloff: 0
+    - HardEdgeSize: 0.4
+    - SoftEdgeAlpha: 0
+    - SoftEdgeFalloff: 0
+    - SoftEdgeSize: 28
     - _BumpScale: 1
-    - _Cutoff: 0.62
+    - _Cutoff: 0.5
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
     - _FresnelBrightness: 0
     - _FresnelPower: 0
     - _FresnelShadowDropoff: 0
     - _GlossMapScale: 1
-    - _Glossiness: 0
+    - _Glossiness: 0.5
     - _GlossyReflections: 1
     - _HighIntensity: 1.5
-    - _LightScalar: 1
+    - _LightScalar: 2.4
     - _LowIntensity: 1
     - _Metallic: 0
-    - _Mode: 1
+    - _Mode: 0
     - _OcclusionStrength: 1
-    - _OutlineSize: 10
+    - _OutlineSize: 15
     - _Parallax: 0.02
-    - _RampLevels: 2
+    - _RampLevels: 3
     - _RimAlpha: 0
     - _RimDropOff: 0
     - _RimPower: 0
@@ -99,11 +103,14 @@ Material:
     - _UVSec: 0
     - _ZWrite: 1
     m_Colors:
+    - HardEdgeColor: {r: 1, g: 1, b: 1, a: 0}
+    - SoftEdgeColor: {r: 1, g: 1, b: 1, a: 0}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _EmissColor: {r: 0.4978195, g: 0.9339623, b: 0.5142634, a: 0}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _FresnelColor: {r: 1, g: 1, b: 1, a: 1}
-    - _HighColor: {r: 1, g: 1, b: 1, a: 1}
-    - _LowColor: {r: 1, g: 1, b: 1, a: 1}
+    - _HighColor: {r: 1, g: 0.88057804, b: 0.740566, a: 1}
+    - _LowColor: {r: 0.735849, g: 0.5181235, b: 0.2672659, a: 1}
     - _OutlineColor: {r: 0, g: 0, b: 0, a: 1}
-    - _RimColor: {r: 1, g: 1, b: 1, a: 1}
+    - _RimColor: {r: 0.7924528, g: 0.64168745, b: 0.34015664, a: 1}
   m_BuildTextureStacks: []
