@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Windows
+  m_Name: Windows 1
   m_Shader: {fileID: 4800000, guid: 9e0b78a84584ffb4b9d963b4c6f26436, type: 3}
   m_Parent: {fileID: 2100000, guid: cf33886a24c38784dadd2871058bc736, type: 2}
   m_ModifiedSerializedProperties: 0

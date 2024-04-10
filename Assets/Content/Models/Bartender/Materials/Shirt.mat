@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Windows
+  m_Name: Shirt
   m_Shader: {fileID: 4800000, guid: 9e0b78a84584ffb4b9d963b4c6f26436, type: 3}
   m_Parent: {fileID: 2100000, guid: cf33886a24c38784dadd2871058bc736, type: 2}
   m_ModifiedSerializedProperties: 0
@@ -25,9 +25,10 @@ Material:
     m_TexEnvs: []
     m_Ints: []
     m_Floats:
-    - _HighIntensity: 1.78
-    - _RampLevels: 2
+    - _HighIntensity: 1.7
+    - _LightScalar: 2.34
+    - _LowIntensity: 1.07
     m_Colors:
-    - _HighColor: {r: 0.99215686, g: 0.9302489, b: 0.73333335, a: 1}
-    - _LowColor: {r: 0.84400004, g: 0.82032585, b: 0.76044405, a: 1}
+    - _HighColor: {r: 1, g: 1, b: 1, a: 1}
+    - _LowColor: {r: 1, g: 1, b: 1, a: 1}
   m_BuildTextureStacks: []
