@@ -22,6 +22,11 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: Nail
+    second: {fileID: 2100000, guid: e49fc13bee2ad9e498e70452fa27e0f5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: Red
     second: {fileID: 2100000, guid: 1a55079de9bad434c918a13869984cfc, type: 2}
   - first:
