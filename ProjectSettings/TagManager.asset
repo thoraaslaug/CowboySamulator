@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - CinemachineTarget
+  - Glass1
+  - Glass2
+  - Glass3
   layers:
   - Default
   - TransparentFX

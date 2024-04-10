@@ -24,7 +24,7 @@ public class NextLevel : MonoBehaviour
 
     IEnumerator LoadLevel()
     {
-        AsyncOperation loadlevel =  SceneManager.LoadSceneAsync("ThoraFirstPerson");
+        AsyncOperation loadlevel =  SceneManager.LoadSceneAsync("SaloonInterior");
 
         loading.enabled = true;
         while (!loadlevel.isDone)
