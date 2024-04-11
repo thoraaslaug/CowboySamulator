@@ -8,6 +8,7 @@ TagManager:
   - Glass1
   - Glass2
   - Glass3
+  - Bad
   layers:
   - Default
   - TransparentFX
