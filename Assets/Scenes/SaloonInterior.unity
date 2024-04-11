@@ -705,8 +705,7 @@ MonoBehaviour:
   - {fileID: 6082428473672288809}
   - {fileID: 1309727886}
   - {fileID: 800500669}
-  drinkSound: {fileID: 287595644}
-  burpSound: {fileID: 1496702251}
+  sound: {fileID: 287595644}
 --- !u!4 &287595643
 Transform:
   m_ObjectHideFlags: 0
@@ -734,8 +733,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e33980a91d23f144b78abc6d12b46d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioSource: {fileID: 287595645}
+  audioClips:
+  - {fileID: 8300000, guid: 010847eae82044daa9678c4a64660d87, type: 3}
+  - {fileID: 8300000, guid: 79ddab253c3c8497fbe49b78b64df36a, type: 3}
+  - {fileID: 8300000, guid: 51bc6d732b09744e2bdafcbb60db506c, type: 3}
+  delay: 1
   soundClip: {fileID: 8300000, guid: 83d5fe265aa0fbb4fb23b1ffdc5646cc, type: 3}
+  specificSoundClip: {fileID: 8300000, guid: 80a41885cf8a90747abddb5b5e23a9e6, type: 3}
 --- !u!82 &287595645
 AudioSource:
   m_ObjectHideFlags: 0
@@ -746,7 +750,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 83d5fe265aa0fbb4fb23b1ffdc5646cc, type: 3}
+  m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -1466,7 +1470,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 6653fb60654a30343a34832ba831f344, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.164
+  m_Volume: 0.037
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -2683,8 +2687,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   glassAnimators: []
-  drinkSound: {fileID: 0}
-  burpSound: {fileID: 0}
+  sound: {fileID: 0}
 --- !u!1 &1334267022
 GameObject:
   m_ObjectHideFlags: 0
@@ -3364,8 +3367,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e33980a91d23f144b78abc6d12b46d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioSource: {fileID: 1496702252}
+  audioClips: []
+  delay: 1.5
   soundClip: {fileID: 8300000, guid: e8cf65f9c2612c5469007e45b0cc8f4b, type: 3}
+  specificSoundClip: {fileID: 0}
 --- !u!82 &1496702252
 AudioSource:
   m_ObjectHideFlags: 0
@@ -3377,7 +3382,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: e8cf65f9c2612c5469007e45b0cc8f4b, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -5997,8 +6002,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   glassAnimators: []
-  drinkSound: {fileID: 0}
-  burpSound: {fileID: 0}
+  sound: {fileID: 0}
 --- !u!1 &6310625416350155845
 GameObject:
   m_ObjectHideFlags: 0
