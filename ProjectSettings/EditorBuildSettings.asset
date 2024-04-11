@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/MainMenu.unity
+    guid: 2b70edc494b00614f9cb6050070f5379
+  - enabled: 1
     path: Assets/Scenes/ThoraThirdPerson.unity
     guid: d21f3e3a0df6c014d9337ce0c0222c92
   - enabled: 0
