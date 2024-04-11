@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.3117788, g: 0.52988166, b: 0.5978955, a: 1}
+  m_IndirectSpecularColor: {r: 0.27967945, g: 0.4801246, b: 0.54330516, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -3205,7 +3205,7 @@ GameObject:
   - component: {fileID: 1451640594}
   - component: {fileID: 1451640593}
   - component: {fileID: 1451640592}
-  - component: {fileID: 1451640597}
+  - component: {fileID: 1451640596}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -3299,7 +3299,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1451640597
+--- !u!114 &1451640596
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3308,7 +3308,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1451640591}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bc7b0260911490746995d39381ebca17, type: 3}
+  m_Script: {fileID: 11500000, guid: da3dc1ebca72f4c4890e7881096e850d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   loading: {fileID: 1071788729}

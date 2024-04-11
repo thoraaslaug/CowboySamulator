@@ -26,4 +26,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/ThirdWalkingScene.unity
     guid: 20d3a201edf4aee459033db4e59cf624
+  - enabled: 1
+    path: Assets/Scenes/Duel.unity
+    guid: af5bc92ae948c6f4eb396e1ce2ae3ff3
   m_configObjects: {}

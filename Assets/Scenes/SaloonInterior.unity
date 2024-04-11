@@ -738,9 +738,9 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 010847eae82044daa9678c4a64660d87, type: 3}
   - {fileID: 8300000, guid: 79ddab253c3c8497fbe49b78b64df36a, type: 3}
   - {fileID: 8300000, guid: 51bc6d732b09744e2bdafcbb60db506c, type: 3}
-  delay: 1
+  delay: 3
   specificSoundClip: {fileID: 8300000, guid: 80a41885cf8a90747abddb5b5e23a9e6, type: 3}
-  delayAfterLastBurp: 2
+  delayAfterLastBurp: 4
   soundClip: {fileID: 8300000, guid: 83d5fe265aa0fbb4fb23b1ffdc5646cc, type: 3}
 --- !u!82 &287595645
 AudioSource:

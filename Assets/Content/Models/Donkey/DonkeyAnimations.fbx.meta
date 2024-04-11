@@ -33,18 +33,18 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: DonkeyIdle
-      takeName: DonkeyArmature|DonkeyIdle
+      name: DonkeyArmature|DonkeyWalking
+      takeName: DonkeyArmature|DonkeyWalking
       internalID: 6385114518329224803
       firstFrame: 0
-      lastFrame: 298
+      lastFrame: 29
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
       cycleOffset: 0
       loop: 0
       hasAdditiveReferencePose: 0
-      loopTime: 0
+      loopTime: 1
       loopBlend: 0
       loopBlendOrientation: 0
       loopBlendPositionY: 0
