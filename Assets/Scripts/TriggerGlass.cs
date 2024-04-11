@@ -1,31 +1,51 @@
+using System.Collections;
 using UnityEngine;
 
 public class TriggerGlass : MonoBehaviour
-{ public Animator[] glassAnimators; // Array of Animators for each glass
+{
+    public Animator[] glassAnimators; // Array of Animators for each glass
     private int currentGlassIndex = 0; // Index of the current glass
+    public AnimationSound drinkSound; // Reference to the drink sound
+    public AnimationSound burpSound; // Reference to the burp sound
+
+    private bool isAnimating = false; // Flag to track if animations are currently playing
 
     // Update is called once per frame
     void Update()
     {
-        // Check if the "E" key is pressed
-        if (Input.GetKeyDown(KeyCode.E))
+        // Check if the "E" key is pressed and not currently animating
+        if (Input.GetKeyDown(KeyCode.E) && !isAnimating)
         {
-            // Play the animation for the current glass
-            PlayAnimationForCurrentGlass();
-
-            // Move to the next glass
-            currentGlassIndex = (currentGlassIndex + 1) % glassAnimators.Length;
+            // Start playing animations
+            StartCoroutine(PlayAnimations());
         }
     }
 
-    // Play the animation for the current glass
-    void PlayAnimationForCurrentGlass()
+    IEnumerator PlayAnimations()
     {
-        // Check if the currentGlassIndex is valid
-        if (currentGlassIndex >= 0 && currentGlassIndex < glassAnimators.Length)
+        // Set flag to indicate animations are currently playing
+        isAnimating = true;
+
+        // Play animations for drinking
+        foreach (Animator animator in glassAnimators)
         {
-            // Play the animation for the current glass
-            glassAnimators[currentGlassIndex].SetTrigger("PlayAnimation");
+            // Play animation for the current glass
+            animator.SetTrigger("PlayAnimation");
+
+            // Play the drink sound
+            drinkSound.PlaySound();
+
+            // Wait for the animation to finish
+            yield return new WaitForSeconds(animator.GetCurrentAnimatorStateInfo(0).length);
         }
+
+        // Reset flag to indicate animations have finished
+        isAnimating = false;
+
+        // Play the burp sound after a delay
+        yield return new WaitForSeconds(1.5f);
+
+        // Play the burp sound
+        burpSound.PlaySound();
     }
 }
