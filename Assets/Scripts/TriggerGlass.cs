@@ -6,12 +6,13 @@ public class TriggerGlass : MonoBehaviour
     public Animator[] glassAnimators; // Array of Animators for each glass
     private int currentGlassIndex = 0; // Index of the current glass
     public AnimationSound sound; // Reference to the AnimationSound script
-
+    private bool isOnCooldown = false; // Boolean to track cooldown state
+    public float cooldownDuration = 3f; // Co
     // Update is called once per frame
     void Update()
     {
-        // Check if the "E" key is pressed
-        if (Input.GetKeyDown(KeyCode.E))
+        // Check if the "E" key is pressed and not on cooldown
+        if (Input.GetKeyDown(KeyCode.E) && !isOnCooldown)
         {
             // Play the animation for the current glass
             PlayAnimationForCurrentGlass();
@@ -21,8 +22,19 @@ public class TriggerGlass : MonoBehaviour
 
             // Move to the next glass
             currentGlassIndex = (currentGlassIndex + 1) % glassAnimators.Length;
-           // sound.PlayDelayedSound();
+            
+            // Start the cooldown
+            StartCoroutine(StartCooldown(cooldownDuration));
         }
+    }
+    IEnumerator StartCooldown(float cooldownTime)
+    {
+        isOnCooldown = true; // Set cooldown state to true
+
+        // Wait for cooldown duration
+        yield return new WaitForSeconds(cooldownTime);
+
+        isOnCooldown = false; // Reset cooldown state
     }
 
     // Play the animation for the current glass

@@ -17,4 +17,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SaloonInterior.unity
     guid: f2b7ce6431e9ebd4eafbf22adaf30ed5
+  - enabled: 1
+    path: Assets/Scenes/SecondWalkingScene.unity
+    guid: 71777130c94616745a6653a7c599b801
+  - enabled: 1
+    path: Assets/Scenes/SaloonExterior.unity
+    guid: d0ca2988fc429dd49a690fdc1b6b5668
+  - enabled: 1
+    path: Assets/Scenes/ThirdWalkingScene.unity
+    guid: 20d3a201edf4aee459033db4e59cf624
   m_configObjects: {}

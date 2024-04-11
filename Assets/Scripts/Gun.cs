@@ -10,12 +10,16 @@ public class Gun : MonoBehaviour
     
     [SerializeField]  private GameObject bullet;
     [SerializeField]  private GameObject bulletPoint;
+    public AudioSource audioSource; 
+    public AudioClip clipToPlay;
 
     public float bulletspeed = 600;
     // Start is called before the first frame update
     void Start()
     {
         inputs = transform.root.GetComponent<StarterAssetsInputs>();
+        audioSource = gameObject.AddComponent<AudioSource>();
+
     }
 
     // Update is called once per frame
@@ -33,6 +37,8 @@ public class Gun : MonoBehaviour
         Debug.Log("shot");
         GameObject Bullet =Instantiate(bullet, bulletPoint.transform.position, transform.rotation);
         Bullet.GetComponent<Rigidbody>().AddForce(transform.forward * bulletspeed);
+        audioSource.clip = clipToPlay;
+        audioSource.Play();
         Destroy(Bullet, 1f);
     }
 }
