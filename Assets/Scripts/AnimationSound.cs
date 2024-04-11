@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class AnimationSound : MonoBehaviour
 {
@@ -8,13 +9,15 @@ public class AnimationSound : MonoBehaviour
 
     private AudioSource audioSource; 
     private AudioClip clipToPlay; // Selected audio clip to play
-    // Reference to the audio source component
-    public AudioClip soundClip;
     private int currentClipIndex = 0;
     public AudioClip specificSoundClip;
+    public float delayAfterLastBurp = 2.0f;
+    public AudioClip soundClip;
+
 
     void Start()
-    { audioSource = GetComponent<AudioSource>();
+    {
+        audioSource = GetComponent<AudioSource>();
         if (audioSource == null)
         {
             audioSource = gameObject.AddComponent<AudioSource>();
@@ -29,26 +32,41 @@ public class AnimationSound : MonoBehaviour
             audioSource.PlayOneShot(soundClip);
         }
     }
+    
     public void PlayDelayedSound()
     {
-
-        if (currentClipIndex < audioClips.Length)
+        // Check if the audio source is not currently playing
+        if (!audioSource.isPlaying && currentClipIndex < audioClips.Length)
         {
-            AudioSource.PlayClipAtPoint(audioClips[currentClipIndex], transform.position);
-            currentClipIndex++;
-            audioSource.clip = clipToPlay;
+            // Play the next audio clip
+            audioSource.clip = audioClips[currentClipIndex];
             audioSource.Play();
-        }
-        if(currentClipIndex == audioClips.Length)
-        {
-            StartCoroutine(DelayedLastSound(3f));
-        }
+            currentClipIndex++;
 
+            // If this was the last clip, play the specific sound and load the next scene after a delay
+            if (currentClipIndex == audioClips.Length)
+            {
+                StartCoroutine(DelayedLastSound(delayAfterLastBurp));
+            }
+        }
     }
+
     IEnumerator DelayedLastSound(float delay)
     {
         yield return new WaitForSeconds(delay);
+        
+        // Play the specific sound
         audioSource.clip = specificSoundClip;
         audioSource.Play();
+
+        // Load the next scene after a delay
+        StartCoroutine(WaitAndLoadNextScene(delay));
+    }
+
+    IEnumerator WaitAndLoadNextScene(float delay)
+    {
+        yield return new WaitForSeconds(delay);
+        // Load the next scene
+        SceneManager.LoadScene("SecondWalkingScene");
     }
 }

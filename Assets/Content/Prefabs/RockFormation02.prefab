@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 2445944418064293040}
   - component: {fileID: 6747621866654486607}
   - component: {fileID: 8371932722187805085}
+  - component: {fileID: 8785321049057764131}
   m_Layer: 0
   m_Name: RockFormation02
   m_TagString: Untagged
@@ -83,3 +84,24 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &8785321049057764131
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1927150142101695744}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.16672288, y: 0.1298572, z: 0.18220383}
+  m_Center: {x: 0.0028350318, y: 0.032519557, z: -0.015904533}
