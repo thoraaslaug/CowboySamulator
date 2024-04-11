@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.35331592, g: 0.5947009, b: 0.6694292, a: 1}
+  m_IndirectSpecularColor: {r: 0.20590189, g: 0.3682699, b: 0.42234626, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -5252,7 +5252,7 @@ GameObject:
   - component: {fileID: 2083861554}
   - component: {fileID: 2083861553}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: NavMesh
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5287,7 +5287,7 @@ MonoBehaviour:
   m_OverrideVoxelSize: 0
   m_VoxelSize: 0.16666667
   m_MinRegionArea: 2
-  m_NavMeshData: {fileID: 0}
+  m_NavMeshData: {fileID: 23800000, guid: d346f3ead74ef0449bc4148e04d901a8, type: 2}
   m_BuildHeightMesh: 0
 --- !u!4 &2083861554
 Transform:

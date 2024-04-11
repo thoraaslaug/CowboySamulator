@@ -13,7 +13,7 @@ public class Gun : MonoBehaviour
     public AudioSource audioSource; 
     public AudioClip clipToPlay;
 
-    public float bulletspeed = 600;
+    public float bulletspeed = 1000;
     // Start is called before the first frame update
     void Start()
     {
@@ -24,7 +24,7 @@ public class Gun : MonoBehaviour
 
     // Update is called once per frame
     void Update()
-     {
+    {
         if (inputs.shoot)
         {
             Shoot();

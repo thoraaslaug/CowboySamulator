@@ -46,11 +46,7 @@ public class Shouting : MonoBehaviour
     }
 
     IEnumerator MoveToNextSceneAfterDelay(float delay)
-    {
-        // Wait for the specified delay
-        yield return new WaitForSeconds(delay);
-
-        // Load the next scene (change "NextSceneName" to the name of your next scene)
+    { yield return new WaitForSeconds(delay);
         SceneManager.LoadScene("ThirdWalkingScene");
     }
 }
