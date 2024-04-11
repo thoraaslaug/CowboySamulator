@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.3468749, g: 0.5846924, b: 0.65838313, a: 1}
+  m_IndirectSpecularColor: {r: 0.26054403, g: 0.45076042, b: 0.51133394, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2955,7 +2955,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 867098679525834712, guid: e573efe67a5e6924b820794ffca1d03b, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.52
+      value: 1.74
       objectReference: {fileID: 0}
     - target: {fileID: 867098679525834712, guid: e573efe67a5e6924b820794ffca1d03b, type: 3}
       propertyPath: m_LocalRotation.w
@@ -3509,27 +3509,51 @@ PrefabInstance:
     - target: {fileID: 4416926081852918490, guid: 64dce48905ffd9b4293e595fa6941544, type: 3}
       propertyPath: Talking
       value: 
-      objectReference: {fileID: 8300000, guid: 0a217f58823ea7e49aaa7c571a1cb13d, type: 3}
+      objectReference: {fileID: 8300000, guid: 639ea9574f7f44a3380f9e482f452b97, type: 3}
     - target: {fileID: 4416926081852918490, guid: 64dce48905ffd9b4293e595fa6941544, type: 3}
       propertyPath: GroundLayers.m_Bits
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4416926081852918490, guid: 64dce48905ffd9b4293e595fa6941544, type: 3}
       propertyPath: RandomAudioClips.Array.size
-      value: 3
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4416926081852918490, guid: 64dce48905ffd9b4293e595fa6941544, type: 3}
+      propertyPath: FootstepAudioClips.Array.size
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4416926081852918490, guid: 64dce48905ffd9b4293e595fa6941544, type: 3}
       propertyPath: RandomAudioClips.Array.data[0]
       value: 
-      objectReference: {fileID: 8300000, guid: 0f1259c3c6d93204f8f18c6d815a2162, type: 3}
+      objectReference: {fileID: 8300000, guid: 085fcd53b481a4922ab7c574e489c599, type: 3}
     - target: {fileID: 4416926081852918490, guid: 64dce48905ffd9b4293e595fa6941544, type: 3}
       propertyPath: RandomAudioClips.Array.data[1]
       value: 
-      objectReference: {fileID: 8300000, guid: 08197bfc8c9bf8e4c92f26d11e359599, type: 3}
+      objectReference: {fileID: 8300000, guid: 14002ebefbc9a441d9929eb6bdf5fbb2, type: 3}
     - target: {fileID: 4416926081852918490, guid: 64dce48905ffd9b4293e595fa6941544, type: 3}
       propertyPath: RandomAudioClips.Array.data[2]
       value: 
-      objectReference: {fileID: 8300000, guid: e8cf65f9c2612c5469007e45b0cc8f4b, type: 3}
+      objectReference: {fileID: 8300000, guid: c4b7fd446d8834547a861ce3bc61bb40, type: 3}
+    - target: {fileID: 4416926081852918490, guid: 64dce48905ffd9b4293e595fa6941544, type: 3}
+      propertyPath: RandomAudioClips.Array.data[3]
+      value: 
+      objectReference: {fileID: 8300000, guid: cf1f44b355dfa475c8d5b078c2cdf238, type: 3}
+    - target: {fileID: 4416926081852918490, guid: 64dce48905ffd9b4293e595fa6941544, type: 3}
+      propertyPath: RandomAudioClips.Array.data[4]
+      value: 
+      objectReference: {fileID: 8300000, guid: cf1f44b355dfa475c8d5b078c2cdf238, type: 3}
+    - target: {fileID: 4416926081852918490, guid: 64dce48905ffd9b4293e595fa6941544, type: 3}
+      propertyPath: RandomAudioClips.Array.data[5]
+      value: 
+      objectReference: {fileID: 8300000, guid: cf1f44b355dfa475c8d5b078c2cdf238, type: 3}
+    - target: {fileID: 4416926081852918490, guid: 64dce48905ffd9b4293e595fa6941544, type: 3}
+      propertyPath: RandomAudioClips.Array.data[6]
+      value: 
+      objectReference: {fileID: 8300000, guid: cf1f44b355dfa475c8d5b078c2cdf238, type: 3}
+    - target: {fileID: 4416926081852918490, guid: 64dce48905ffd9b4293e595fa6941544, type: 3}
+      propertyPath: RandomAudioClips.Array.data[7]
+      value: 
+      objectReference: {fileID: 8300000, guid: cf1f44b355dfa475c8d5b078c2cdf238, type: 3}
     - target: {fileID: 5885216827943657505, guid: 64dce48905ffd9b4293e595fa6941544, type: 3}
       propertyPath: canPush
       value: 1

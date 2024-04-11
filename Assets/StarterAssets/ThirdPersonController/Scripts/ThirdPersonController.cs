@@ -299,7 +299,7 @@ public class ThirdPersonController : MonoBehaviour
         if (_speed > 0.0f)
         {
             // Start moving
-            if (!footstepAudioSource.isPlaying)
+           if (!footstepAudioSource.isPlaying)
             {
                 // Play footstep sound continuously
                 footstepAudioSource.clip = FootstepAudioClips[Random.Range(0, FootstepAudioClips.Length)];
