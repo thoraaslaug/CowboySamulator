@@ -1,20 +1,17 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using UnityEngine.UIElements;
 
-public class Bullet : MonoBehaviour
+public class KillBullet : MonoBehaviour
 {
-
     private void OnCollisionEnter(Collision collision)
     {
-          if (collision.gameObject.CompareTag("Bad"))
-          {
-              StartCoroutine(NextScene(5f)); 
-              Debug.Log("ouch");
-          }
+        if (collision.gameObject.CompareTag("Bad"))
+        {
+            StartCoroutine(NextScene(5f)); 
+            Debug.Log("ouch");
+        }
     }
     IEnumerator NextScene(float delay)
     {
@@ -24,5 +21,4 @@ public class Bullet : MonoBehaviour
         SceneManager.LoadScene("LastWalkingScene");
         Debug.Log("After LoadScene");
     }
-
 }

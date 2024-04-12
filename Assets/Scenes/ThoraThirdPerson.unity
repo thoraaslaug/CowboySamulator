@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.35331592, g: 0.5947009, b: 0.6694292, a: 1}
+  m_IndirectSpecularColor: {r: 0.21999982, g: 0.38933486, b: 0.44506335, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1998,7 +1998,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5824082278405997879, guid: b0d0a19dbbbd7174bb5600c19385513f, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -1.86
+      value: -5.69
       objectReference: {fileID: 0}
     - target: {fileID: 5824082278405997879, guid: b0d0a19dbbbd7174bb5600c19385513f, type: 3}
       propertyPath: m_LocalRotation.w
@@ -2747,7 +2747,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 689112717470116976, guid: b656be9121605ce4db12a6cb35cc2e20, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 2.7
+      value: 3.9
       objectReference: {fileID: 0}
     - target: {fileID: 689112717470116976, guid: b656be9121605ce4db12a6cb35cc2e20, type: 3}
       propertyPath: m_LocalRotation.w
@@ -3186,7 +3186,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 867098679525834712, guid: e573efe67a5e6924b820794ffca1d03b, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1.74
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 867098679525834712, guid: e573efe67a5e6924b820794ffca1d03b, type: 3}
       propertyPath: m_LocalRotation.w
@@ -3254,7 +3254,7 @@ Transform:
   m_GameObject: {fileID: 1285390977}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 39.04, y: 0.52, z: -1.05}
+  m_LocalPosition: {x: 39.04, y: 0.52, z: 0.12}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3302,7 +3302,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1285390977}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -4148,7 +4148,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5824082278405997879, guid: b0d0a19dbbbd7174bb5600c19385513f, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -2.19
+      value: -6.02
       objectReference: {fileID: 0}
     - target: {fileID: 5824082278405997879, guid: b0d0a19dbbbd7174bb5600c19385513f, type: 3}
       propertyPath: m_LocalRotation.w
@@ -4867,7 +4867,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5824082278405997879, guid: b0d0a19dbbbd7174bb5600c19385513f, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.61
+      value: -3.22
       objectReference: {fileID: 0}
     - target: {fileID: 5824082278405997879, guid: b0d0a19dbbbd7174bb5600c19385513f, type: 3}
       propertyPath: m_LocalRotation.w
