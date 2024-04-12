@@ -10,6 +10,8 @@ public class StartGameButton : MonoBehaviour
     public AudioSource audioSource; // Reference to the Audio Source component
     public float delay = 20f;
     public AudioClip music;
+    public Donkey donkey; // Reference to the Donkey script
+
     void Start()
     {
         // Add listener to the button
@@ -42,6 +44,18 @@ public class StartGameButton : MonoBehaviour
 
             // Destroy the GameObject after the audio clip has finished playing
             Invoke("DestroyGameObject", startSound.length);
+            Invoke("StartNPCMovement", startSound.length);
+        }
+
+        // Start the game (load the next scene)
+        SceneManager.LoadScene("ThoraThirdPerson");
+    }
+    void StartNPCMovement()
+    {
+        // Start the NPC's movement
+        if (donkey != null)
+        {
+            donkey.StartWalking();
         }
 
         // Start the game (load the next scene)
