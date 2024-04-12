@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.24349803, g: 0.42487028, b: 0.48332113, a: 1}
+  m_IndirectSpecularColor: {r: 0.32669443, g: 0.55317014, b: 0.62357354, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2493,7 +2493,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5962398697794855834, guid: 2c5194f217744e34eaf83d73af1dd1bd, type: 3}
       propertyPath: m_Speed
-      value: 0.5
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 6550998891591679021, guid: 2c5194f217744e34eaf83d73af1dd1bd, type: 3}
       propertyPath: m_Mass
@@ -3766,7 +3766,6 @@ GameObject:
   - component: {fileID: 1566516177}
   - component: {fileID: 1566516176}
   - component: {fileID: 1566516175}
-  - component: {fileID: 1566516174}
   m_Layer: 0
   m_Name: DonkeyTarget
   m_TagString: Untagged
@@ -3789,20 +3788,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1566516174
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1566516172}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: da3dc1ebca72f4c4890e7881096e850d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  loading: {fileID: 1071788729}
-  imageActive: 0
 --- !u!65 &1566516175
 BoxCollider:
   m_ObjectHideFlags: 0
