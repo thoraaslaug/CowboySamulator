@@ -34,6 +34,11 @@ public class Donkey : MonoBehaviour
         }
         LookForGround();
     }
+    public void StartWalking()
+    {
+        // Start the NPC's movement
+        SetDestination(targetDestination.position);
+    }
     
     void LookForGround()
     {
