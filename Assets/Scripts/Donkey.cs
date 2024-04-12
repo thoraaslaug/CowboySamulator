@@ -8,6 +8,8 @@ public class Donkey : MonoBehaviour
     public Transform targetDestination; // The destination point the NPC should walk towards
     private NavMeshAgent navMeshAgent;
     private Animator animator;
+    public LayerMask groundLayer; // Layer mask for the ground
+    public float maxGroundDistance = 1.0f; 
 
     void Start()
     {
@@ -29,6 +31,17 @@ public class Donkey : MonoBehaviour
         {
             // If the NPC is not moving, stop the walking animation
             animator.SetBool("IsWalking", false);
+        }
+        LookForGround();
+    }
+    
+    void LookForGround()
+    {
+        RaycastHit hit;
+        if (Physics.Raycast(transform.position, Vector3.down, out hit, maxGroundDistance, groundLayer))
+        {
+            // If ground is found, adjust the position of the destination to the ground position
+            targetDestination.position = hit.point;
         }
     }
     

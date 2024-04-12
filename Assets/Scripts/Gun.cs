@@ -39,6 +39,6 @@ public class Gun : MonoBehaviour
         Bullet.GetComponent<Rigidbody>().AddForce(transform.forward * bulletspeed);
         audioSource.clip = clipToPlay;
         audioSource.Play();
-        Destroy(Bullet, 1f);
+        Destroy(Bullet, 6f);
     }
 }
