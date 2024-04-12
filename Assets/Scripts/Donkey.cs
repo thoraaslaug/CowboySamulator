@@ -44,6 +44,10 @@ public class Donkey : MonoBehaviour
     
     public void SetDestination(Vector3 destination)
     {
-        navMeshAgent.SetDestination(destination);
+        if (targetDestination != null)
+        {
+            Vector3 targetVector = targetDestination.transform.position;
+            navMeshAgent.SetDestination(targetVector);
+        }
     }
 }

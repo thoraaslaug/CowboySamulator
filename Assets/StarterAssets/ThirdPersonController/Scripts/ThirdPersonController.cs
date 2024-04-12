@@ -308,7 +308,7 @@ public class ThirdPersonController : MonoBehaviour
         if (_speed > 0.0f)
         {
             // Start moving
-           if (!footstepAudioSource.isPlaying)
+            if (!footstepAudioSource.isPlaying)
             {
                 // Play footstep sound continuously
                 footstepAudioSource.clip = FootstepAudioClips[Random.Range(0, FootstepAudioClips.Length)];
@@ -328,13 +328,16 @@ public class ThirdPersonController : MonoBehaviour
                     {
                         // Resume talking audio from the stored playback position
                         talkingAudioSource.time = _talkingPlaybackPosition;
-                        talkingAudioSource.Play();
+                        if (!talkingAudioSource.isPlaying)
+                        {
+                            talkingAudioSource.Play();
+                        }
                     }
                     else
                     {
                         // Start playing talking audio
                         talkingAudioSource.clip = Talking;
-                        talkingAudioSource.loop = true;
+                        talkingAudioSource.loop = false; // Set loop to false to play only once
                         talkingAudioSource.volume = TalkingAudioVolume;
                         talkingAudioSource.Play();
                     }
