@@ -412,6 +412,7 @@ MonoBehaviour:
   audioSource: {fileID: 193639066}
   delay: 20
   music: {fileID: 8300000, guid: 6d7b10ab6af4c4d5b8cad19797fdb984, type: 3}
+  donkey: {fileID: 0}
 --- !u!224 &193639071
 RectTransform:
   m_ObjectHideFlags: 0
@@ -652,7 +653,7 @@ RectTransform:
   m_GameObject: {fileID: 287265923}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.8927, y: 1.8927, z: 1.8927}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 806908595}

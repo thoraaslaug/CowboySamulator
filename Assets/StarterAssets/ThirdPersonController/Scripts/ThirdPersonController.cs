@@ -294,6 +294,15 @@ public class ThirdPersonController : MonoBehaviour
             _animator.SetFloat(_animIDSpeed, _animationBlend);
             _animator.SetFloat(_animIDMotionSpeed, inputMagnitude);
         }
+        
+        bool isMoving = _speed > 0.0f;
+
+        // Update animator parameter based on whether the player is moving
+        if (_hasAnimator)
+        {
+            _animator.SetBool("IsWalking", isMoving);
+        }
+
 
 // Check if player is moving
         if (_speed > 0.0f)

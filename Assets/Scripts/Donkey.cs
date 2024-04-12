@@ -32,7 +32,7 @@ public class Donkey : MonoBehaviour
             // If the NPC is not moving, stop the walking animation
             animator.SetBool("IsWalking", false);
         }
-        LookForGround();
+       
     }
     public void StartWalking()
     {
@@ -40,15 +40,7 @@ public class Donkey : MonoBehaviour
         SetDestination(targetDestination.position);
     }
     
-    void LookForGround()
-    {
-        RaycastHit hit;
-        if (Physics.Raycast(transform.position, Vector3.down, out hit, maxGroundDistance, groundLayer))
-        {
-            // If ground is found, adjust the position of the destination to the ground position
-            targetDestination.position = hit.point;
-        }
-    }
+
     
     public void SetDestination(Vector3 destination)
     {
