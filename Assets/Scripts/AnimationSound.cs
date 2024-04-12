@@ -1,6 +1,7 @@
 using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class AnimationSound : MonoBehaviour
 {
@@ -13,10 +14,13 @@ public class AnimationSound : MonoBehaviour
     public AudioClip specificSoundClip;
     public float delayAfterLastBurp = 2.0f;
     public AudioClip soundClip;
+    public Image loading;
 
 
     void Start()
     {
+        loading.enabled = false;
+
         audioSource = GetComponent<AudioSource>();
         if (audioSource == null)
         {
@@ -66,7 +70,9 @@ public class AnimationSound : MonoBehaviour
     IEnumerator WaitAndLoadNextScene(float delay)
     {
         yield return new WaitForSeconds(delay);
-        // Load the next scene
+        
         SceneManager.LoadScene("SecondWalkingScene");
+
+     
     }
 }

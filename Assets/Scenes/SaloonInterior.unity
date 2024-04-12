@@ -742,6 +742,7 @@ MonoBehaviour:
   specificSoundClip: {fileID: 8300000, guid: 80a41885cf8a90747abddb5b5e23a9e6, type: 3}
   delayAfterLastBurp: 4
   soundClip: {fileID: 8300000, guid: 83d5fe265aa0fbb4fb23b1ffdc5646cc, type: 3}
+  loading: {fileID: 1449994405}
 --- !u!82 &287595645
 AudioSource:
   m_ObjectHideFlags: 0
@@ -3757,6 +3758,7 @@ MonoBehaviour:
   specificSoundClip: {fileID: 0}
   delayAfterLastBurp: 2
   soundClip: {fileID: 8300000, guid: e8cf65f9c2612c5469007e45b0cc8f4b, type: 3}
+  loading: {fileID: 0}
 --- !u!82 &1496702252
 AudioSource:
   m_ObjectHideFlags: 0
@@ -5050,7 +5052,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1863303202
 MonoBehaviour:
   m_ObjectHideFlags: 0
